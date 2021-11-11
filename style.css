@@ -1,0 +1,53 @@
+/* Body */
+body{
+    background: black;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(img/fgl\ cover\ dimas.png);
+    background-size: cover;
+    margin-top: -3.5rem;
+}
+
+.jumbotext{
+    color: #E7C220;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+.jumbop{
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Navbar */
+.imgstyle{
+    height: 65px;
+    width: 65px;
+}
+.navbar{
+    background: black;
+}
+.nav-link{
+    font-family: Montserrat;
+}
+.nav-link:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #E7C220;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+.nav-item{
+    margin-top: 3px;
+}
+
+/* Body Contents */
+.bodyheader{
+    color: #E7C220;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.colstyle{
+    margin-right: -150px;
+}
