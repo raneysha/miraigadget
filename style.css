@@ -75,6 +75,10 @@ body{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }   
 
+#memtext{
+    font-size: 22px;
+}
+
 .colstyle p{
     text-align: justify;
 }
@@ -82,11 +86,13 @@ body{
     background-color: #E7C220;
 }
 
+
+
 /* Tablets */
 @media (max-width: 992px) { 
     /* Jumbotron */
     .jumbotron{
-        background-image: url(https://source.unsplash.com/1920x1080/?physics);
+        background-image: url(https://source.unsplash.com/1920x1080/?cern);
         background-size: cover;
         margin-top: -3.5rem;
         text-align: center;
@@ -103,7 +109,7 @@ body{
         margin-right: auto;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
         font-weight: 600;
-        text-align: center;
+        /* text-align: justify; */
     }
     /* Contents */
     .colstyle{
@@ -127,4 +133,42 @@ body{
     .col iframe{
         width: 200px;
     }
+}
+
+/* Animation shits */
+.spin {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.spin-back {
+    -webkit-animation:spin-back 4s linear infinite;
+    -moz-animation:spin-back 4s linear infinite;
+    animation:spin-back 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes spin-back { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin-back { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin-back { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+.bi-gear-fill{
+    fill: #E7C220;
+}
+
+.gear1{
+    margin-top: -10px;
+}
+
+.gear2{
+    margin-left: -10px;
+    margin-top: 45px;
+}
+
+.gear3{
+    margin-left: -10px;
 }
