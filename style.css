@@ -5,17 +5,22 @@ body{
 
 /* Jumbotron */
 .jumbotron{
+    min-height: 690px;
     background-image: url(img/fgl\ cover\ dimas.png);
     background-size: cover;
     margin-top: -3.5rem;
+    font-family: Montserrat;
 }
 
 .jumbotext{
     color: #E7C220;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 40px;
 }
 .jumbop{
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    text-align: justify;
 }
 
 /* Navbar */
@@ -28,6 +33,7 @@ body{
 }
 .nav-link{
     font-family: Montserrat;
+    font-weight: 700;
 }
 .nav-link:hover::after{
     content: '';
@@ -46,8 +52,38 @@ body{
 .bodyheader{
     color: #E7C220;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}   
+
+.colstyle p{
+    text-align: justify;
 }
 
-.colstyle{
-    margin-left: 100px;
+/* Phone */
+@media (max-width: 720px) { 
+    /* Jumbotron */
+    .jumbotron{
+        background-image: url(https://source.unsplash.com/1920x1080/?physics);
+        background-size: cover;
+        margin-top: -3.5rem;
+        text-align: center;
+    }
+    .jumbotext{
+        color: #E7C220;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .jumbop{
+        -webkit-text-stroke: 0.5px black;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        font-weight: 600;
+        text-align: center;
+    }
+    /* Contents */
+    .colstyle{
+        margin-top: 20px;
+    }
+    .colstyle p{
+        text-align: justify;
+    }
 }
