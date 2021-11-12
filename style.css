@@ -19,10 +19,28 @@ body{
     font-size: 40px;
 }
 .jumbop{
+    margin-right: 820px;
     font-size: 20px;
     text-align: justify;
+    line-height: 30px;
 }
+.btn{
+    font-weight: 700;
+    background-color: #E7C220;
+    color: black;
 
+}
+.btn:hover{
+    background-color: black;
+    color: #E7C220;
+}
+@media (min-width: 992px){
+    .btn:hover{
+        background-color: black;
+        color: #E7C220;
+        border: 1px solid white;
+    }
+}
 /* Navbar */
 .imgstyle{
     height: 65px;
@@ -58,14 +76,15 @@ body{
     text-align: justify;
 }
 
-/* Phone */
-@media (max-width: 720px) { 
+/* Tablets */
+@media (max-width: 992px) { 
     /* Jumbotron */
     .jumbotron{
         background-image: url(https://source.unsplash.com/1920x1080/?physics);
         background-size: cover;
         margin-top: -3.5rem;
         text-align: center;
+        min-height: 400px;
     }
     .jumbotext{
         color: #E7C220;
@@ -75,6 +94,7 @@ body{
     }
     .jumbop{
         -webkit-text-stroke: 0.5px black;
+        margin-right: auto;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
         font-weight: 600;
         text-align: center;
@@ -88,5 +108,17 @@ body{
     }
     .col iframe{
         width: 300px;
+    }
+}
+/* Bigger Phones just for iframe */
+@media (max-width: 393px) { 
+    .col iframe{
+        width: 260px;
+    }
+}
+/* Smaller Phones just for iframe */
+@media (max-width: 320px) { 
+    .col iframe{
+        width: 200px;
     }
 }
