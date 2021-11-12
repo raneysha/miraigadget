@@ -86,7 +86,7 @@ body{
     .colstyle p{
         text-align: justify;
     }
-    .col iframe{
+    iframe{
         width: 420px;
     }
 }
