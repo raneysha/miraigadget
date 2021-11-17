@@ -82,10 +82,16 @@ body{
 .colstyle p{
     text-align: justify;
 }
+
 .invcol{
     background-color: #E7C220;
+    margin-left: -1000px;
+    transition: 0.5s;
 }
 
+.invcoltran{
+    margin-left: 0px;
+}
 
 
 /* Tablets */
@@ -127,11 +133,27 @@ body{
     .col iframe{
         width: 260px;
     }
+    .invcol{
+        background-color: #E7C220;
+        margin-left: 0px;
+        transition: 0.5s;
+    }
+    .invcoltran{
+        margin-left: 0px;
+    }
 }
 /* Smaller Phones just for iframe */
 @media (max-width: 320px) { 
     .col iframe{
         width: 200px;
+    }
+    .invcol{
+        background-color: #E7C220;
+        margin-left: 0px;
+        transition: 0.5s;
+    }
+    .invcoltran{
+        margin-left: 0px;
     }
 }
 
