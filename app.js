@@ -15,7 +15,7 @@ readJson = () => {
             //    console.log(this.users);
             json.forEach(element => {
                 if (element.name == name) {
-                    window.location.replace(element.link);
+                   window.location.replace(element.link);
                 }
             });
         })

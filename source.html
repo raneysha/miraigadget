@@ -29,7 +29,7 @@
                 //    console.log(this.users);
                 json.forEach(element => {
                     if (element.name == name) {
-                        console.log(element.link)
+                        return window.location.replace(element.link)
                     }
                 });
             })
