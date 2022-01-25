@@ -9,10 +9,7 @@
 </head>
 
 <body>
-    <!-- <form action="" method="GET">
-        <input name="name" type="hidden" value="for arakune player">
-        <button type="submit">button</button>
-    </form> -->
+    
 </body>
 <script>
     readJson = () => {
@@ -32,7 +29,7 @@
                 //    console.log(this.users);
                 json.forEach(element => {
                     if (element.name == name) {
-                        window.location.replace(element.link);
+                        console.log(element.link)
                     }
                 });
             })
